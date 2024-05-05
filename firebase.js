@@ -132,9 +132,9 @@ var dataRef6 = database.ref('frekuensiac');
 
 
 dataRef5.on('value', function(getdata1){
-    var energi = getdata1.val();
+    var energi = getdata1.val().toFixed(2);
+	
 document.getElementById("kwh").innerHTML= "Rp" +energi*1352; 
- 
 document.getElementById("metering").innerHTML= energi + "kWh"; 
 
 })
@@ -142,8 +142,8 @@ document.getElementById("metering").innerHTML= energi + "kWh";
 
 
 dataRef1.on('value', function(getdata1){
-    var teganganvac = getdata1.val();
-document.getElementById("t").innerHTML= teganganvac +" Volt"; 
+    var teganganvac = getdata1.val().toFixed(2);
+document.getElementById("t").innerHTML= teganganvac +"Volt"; 
 
 })
 dataRef2.on('value', function(getdata1){
