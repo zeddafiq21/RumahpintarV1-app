@@ -127,14 +127,20 @@ var dataRef3 = database.ref('dayavac');
 var dataRef4 = database.ref('powerfactorac');
 var dataRef5 = database.ref('energiac');
 var dataRef6 = database.ref('frekuensiac');
+var dataRef7 = database.ref('kwhmeter');
+
+dataRef7.on('value', function(getdata1){
+    var kwh = getdata1.val();
+	
+document.getElementById("kwh").innerHTML= "Rp" + kwh.toFixed(2); 
 
 
+})
 
 
 dataRef5.on('value', function(getdata1){
     var energi = getdata1.val().toFixed(2);
-	
-document.getElementById("kwh").innerHTML= "Rp" +energi*1352; 
+
 document.getElementById("metering").innerHTML= energi + "kWh"; 
 
 })
