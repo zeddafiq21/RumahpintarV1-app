@@ -101,12 +101,12 @@
             <h1>Al Ikhsan SmartHome</h1>
             <!-- Analyses -->
             <div class="analyse">
-              
+               
                 <div class="searches">
                     <div class="status">
                         <div class="info">
-                            <h3 >Biaya kWh</h3>
-                            <h1 id="kwh">Rp0</h1>
+                            <h3 >PV (Voltage)</h3>
+                            <h1 id="pvVoltage">0 V</h1>
                         </div>
                         <div class="progresss">
                             <svg>
@@ -122,8 +122,8 @@
                 <div class="sales">
                     <div class="status">
                         <div class="info">
-                            <h3 >kWh Meter</h3>
-                            <h1 id="metering">0kWh</h1>
+                            <h3 >PV (Current)</h3>
+                            <h1 id="pvCurrent">0 A</h1>
                         </div>
                         <div class="progresss">
                             <svg>
@@ -141,8 +141,79 @@
                 <div class="visits">
                     <div class="status">
                         <div class="info">
-                            <h3>Daya Listrik</h3>
-                            <h1 id ="daya">0 Watt</h1>
+                            <h3>PV (Power)</h3>
+                            <h1 id ="pvPower">0 W</h1>
+                        </div>
+                        <div class="progresss">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="percentage">
+                                <p>-48%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="searches">
+                    <div class="status">
+                        <div class="info">
+                            <h3>PV (Energy)</h3>
+                            <h1 id ="pvEnergy">0 Wh</h1>
+                        </div>
+                        <div class="progresss">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="percentage">
+                                <p>+21%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="searches">
+                    <div class="status">
+                        <div class="info">
+                            <h3 >Batteray (Voltage)</h3>
+                            <h1 id="batterayVoltage">0 A</h1>
+                        </div>
+                        <div class="progresss">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="percentage">
+                                <p>+81%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sales">
+                    <div class="status">
+                        <div class="info">
+                            <h3 >Batteray (Current)</h3>
+                            <h1 id="batterayCurrent">0 A</h1>
+                        </div>
+                        <div class="progresss">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="percentage">
+                                <p>+81%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                
+                <div class="visits">
+                    <div class="status">
+                        <div class="info">
+                            <h3>Batteray (Power)</h3>
+                            <h1 id ="batterayPower">0 W</h1>
                         </div>
                         <div class="progresss">
                             <svg>
@@ -157,8 +228,8 @@
                 <div class="searches">
                     <div class="status">
                         <div class="info">
-                            <h3>Tegangan</h3>
-                            <h1 class = "value "id ="t">0 Volt</h1>
+                            <h3>Batteray (Energy)</h3>
+                            <h1 id ="batterayEnergy">0 Wh</h1>
                         </div>
                         <div class="progresss">
                             <svg>
@@ -170,27 +241,69 @@
                         </div>
                     </div>
                 </div>
+
+
+
+
+
+              
+                <div class="searches">
+                    <div class="status">
+                        <div class="info">
+                            <h3 >Load (Voltage)</h3>
+                            <h1 id="t">0 V</h1>
+                        </div>
+                        <div class="progresss">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="percentage">
+                                <p>+81%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="sales">
                     <div class="status">
                         <div class="info">
-                            <h3>Arus</h3>
-                            <h1 id = "arus">0</h1>
+                            <h3 >Load (Current)</h3>
+                            <h1 id="arus">0 A</h1>
                         </div>
                         <div class="progresss">
                             <svg>
                                 <circle cx="38" cy="38" r="36"></circle>
                             </svg>
                             <div class="percentage">
-                                <p>+21%</p>
+                                <p>+81%</p>
                             </div>
                         </div>
                     </div>
                 </div>
+
+
+                
                 <div class="visits">
                     <div class="status">
                         <div class="info">
-                            <h3>Frekuensi</h3>
-                            <h1 id="frekuensi">0</h1>
+                            <h3>Load (Power)</h3>
+                            <h1 id ="daya">0 W</h1>
+                        </div>
+                        <div class="progresss">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="percentage">
+                                <p>-48%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="searches">
+                    <div class="status">
+                        <div class="info">
+                            <h3>Load (Energy)</h3>
+                            <h1 class = "value "id ="metering">0 kWh</h1>
                         </div>
                         <div class="progresss">
                             <svg>
@@ -205,7 +318,39 @@
                 <div class="searches">
                     <div class="status">
                         <div class="info">
-                            <h3 >Faktor Daya</h3>
+                            <h3>Cost (Energy)</h3>
+                            <h1 id = "kwh">Rp.0</h1>
+                        </div>
+                        <div class="progresss">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="percentage">
+                                <p>+21%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sales">
+                    <div class="status">
+                        <div class="info">
+                            <h3>Frequency</h3>
+                            <h1 id="frekuensi">0</h1>
+                        </div>
+                        <div class="progresss">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="percentage">
+                                <p>+21%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="visits">
+                    <div class="status">
+                        <div class="info">
+                            <h3 >Power Factor</h3>
                             <h1 id="powerfactor">0</h1>
                         </div>
                         <div class="progresss">

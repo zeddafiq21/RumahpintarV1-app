@@ -128,12 +128,20 @@ var dataRef4 = database.ref('powerfactorac');
 var dataRef5 = database.ref('energiac');
 var dataRef6 = database.ref('frekuensiac');
 var dataRef7 = database.ref('kwhmeter');
+var dataRef8 = database.ref('teganganpv');
+var dataRef9 = database.ref('teganganbaterai');
+var dataRef10 = database.ref('aruspv');
+var dataRef11 = database.ref('arusbaterai');
+var dataRef12 = database.ref('dayapv');
+var dataRef13 = database.ref('dayabaterai');
+var dataRef14 = database.ref('energipv');
+var dataRef15 = database.ref('energibaterai');
+
 
 dataRef7.on('value', function(getdata1){
     var kwh = getdata1.val();
 	
 document.getElementById("kwh").innerHTML= "Rp" + kwh.toFixed(2); 
-
 
 })
 
@@ -141,7 +149,7 @@ document.getElementById("kwh").innerHTML= "Rp" + kwh.toFixed(2);
 dataRef5.on('value', function(getdata1){
     var energi = getdata1.val().toFixed(2);
 
-document.getElementById("metering").innerHTML= energi + "kWh"; 
+document.getElementById("metering").innerHTML= energi + " kWh"; 
 
 })
 
@@ -149,7 +157,7 @@ document.getElementById("metering").innerHTML= energi + "kWh";
 
 dataRef1.on('value', function(getdata1){
     var teganganvac = getdata1.val().toFixed(2);
-document.getElementById("t").innerHTML= teganganvac +"Volt"; 
+document.getElementById("t").innerHTML= teganganvac +" V"; 
 
 })
 dataRef2.on('value', function(getdata1){
@@ -169,7 +177,51 @@ document.getElementById("powerfactor").innerHTML= fdaya +"";
 })
 dataRef3.on('value', function(getdata1){
     var daya = getdata1.val();
-document.getElementById("daya").innerHTML= daya +"Watt"; 
+document.getElementById("daya").innerHTML= daya +"W"; 
+
+})
+
+dataRef8.on('value', function(getdata1){
+    var pvVoltage = getdata1.val();
+document.getElementById("pvVoltage").innerHTML= pvVoltage +" V"; 
+
+})
+dataRef9.on('value', function(getdata1){
+    var batterayVoltage = getdata1.val();
+document.getElementById("batterayVoltage").innerHTML= batterayVoltage +" V"; 
+
+})
+
+
+dataRef10.on('value', function(getdata1){
+    var pvCurrent = getdata1.val();
+document.getElementById("pvCurrent").innerHTML= pvCurrent +" A"; 
+
+})
+dataRef11.on('value', function(getdata1){
+    var batterayCurrent = getdata1.val();
+document.getElementById("batterayCurrent").innerHTML= batterayCurrent +" A"; 
+
+})
+
+dataRef12.on('value', function(getdata1){
+    var pvPower = getdata1.val();
+document.getElementById("pvPower").innerHTML= pvPower +" W"; 
+
+})
+dataRef13.on('value', function(getdata1){
+    var batterayPower = getdata1.val();
+document.getElementById("batterayPower").innerHTML= batterayPower +" W"; 
+
+})
+dataRef14.on('value', function(getdata1){
+    var pvEnergy = getdata1.val();
+document.getElementById("pvEnergy").innerHTML= pvEnergy +" Wh"; 
+
+})
+dataRef15.on('value', function(getdata1){
+    var batterayEnergy = getdata1.val();
+document.getElementById("batterayEnergy").innerHTML= batterayEnergy +" Wh"; 
 
 })
 
